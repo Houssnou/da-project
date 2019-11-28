@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Practice\\da-project\\da.API\\da.API.csproj": {}
+    "D:\\Practice\\da-project\\da.API\\da.API.csproj": {}
   },
   "projects": {
-    "d:\\Practice\\da-project\\da.API\\da.API.csproj": {
+    "D:\\Practice\\da-project\\da.API\\da.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Practice\\da-project\\da.API\\da.API.csproj",
+        "projectUniqueName": "D:\\Practice\\da-project\\da.API\\da.API.csproj",
         "projectName": "da.API",
-        "projectPath": "d:\\Practice\\da-project\\da.API\\da.API.csproj",
+        "projectPath": "D:\\Practice\\da-project\\da.API\\da.API.csproj",
         "packagesPath": "C:\\Users\\hosni\\.nuget\\packages\\",
-        "outputPath": "d:\\Practice\\da-project\\da.API\\obj\\",
+        "outputPath": "D:\\Practice\\da-project\\da.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
