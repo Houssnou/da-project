@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using da.API.Data;
 using da.API.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -38,9 +39,13 @@ namespace da.API
 
       // System.Console.WriteLine(Configuration.GetConnectionString("DefaultConnection"));
 
-      services.AddControllers();
+      services.AddControllers().AddNewtonsoftJson(opt =>{
+        opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+      });
       services.AddCors();
+      services.AddAutoMapper(typeof(DatingRepository).Assembly);
       services.AddScoped<IAuthRepository, AuthRepository>();
+      services.AddScoped<IDatingRepository, DatingRepository>();
       services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
               .AddJwtBearer(options =>
               {
